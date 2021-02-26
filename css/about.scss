@@ -1,0 +1,155 @@
+//scss
+
+@charset "uft-8";
+@import url('common.css');
+@import url('responsive.css');
+
+
+@mixin after{
+    &::after{
+        content:'';
+        clear:both;
+        display:block;
+    }
+}
+@mixin text01{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size:0.875rem;
+    line-height: 1.5rem;
+    color:#313942;
+}
+
+.head{
+    &::before{opacity:1 !important;
+    }
+    .logo{
+        .logo_dark{opacity:1 !important;}
+        .logo_light{opacity:0 !important;} 
+    }
+}
+
+.burger{
+    span{background-color:black !important;}
+}
+
+.about-wrap{
+    width:100%; margin:0 auto;
+    padding:17rem 0;
+}
+
+.workshops{
+    width:95%; margin:0 auto;
+    padding-bottom:4rem;
+    @include after;
+    .workshop-header{
+        width:50%; float:right;
+        padding-bottom:4.5rem;
+        h2{
+            font-size:2.5rem;
+            line-height:2.75rem;
+            padding-left:0.625rem; padding-right:0.625rem;
+        }
+    }
+    .workshop-content{
+        figure{
+            margin-left:auto;
+            width:50%; 
+            padding-bottom:5rem;
+            padding-left:0.625rem; padding-right:0.625rem;
+            img{width:100%;}
+        }
+    }
+}
+
+.about-history{
+    width:95%; margin:0 auto;
+    padding-bottom:4.5rem;
+    padding-left:0.625rem; padding-right:0.625rem;
+    article{
+        width:50%;
+        margin-left:auto;
+        p{  
+            font-size:0.9rem;
+            font-weight: 300;
+            line-height:1.5rem;
+            padding-bottom:0.5rem;
+            padding-right:5rem;
+        }
+    }
+}
+
+.about-gallery{
+    width:95%; margin:0 auto;
+    display:flex;
+    justify-content: center;
+    padding-bottom:5rem;
+    figure{
+        width:35%;
+        padding:0 0.625rem;
+        img{width:100%;}
+    }
+}
+
+.about-us{
+    width:95%; margin:0 auto;
+    padding-bottom:1rem;
+    .about-info{
+        width:50%; margin-left:auto;
+        padding-left:0.625rem;
+        padding-right:5rem;
+        h2{
+            font-family: 'Inter', sans-serif;
+            font-weight:500;
+            line-height:1.5rem;
+            padding-bottom:3rem;    
+        }
+        .about-info-list{
+            padding-bottom:3.5rem;
+            h5{@include text01;
+                padding-bottom:0.5rem;}
+            p{
+                font-weight: 300;
+                font-size:0.9rem;
+                padding-bottom:0.5rem;
+                line-height:1.5rem;
+            }
+        }
+    }
+}
+
+.about-title-img{
+    width:95%; margin:0 auto;
+    padding-bottom: 5rem;
+    padding-left:0.625rem; padding-right:0.625rem;
+    figure{
+        width:100%;
+        img{width:100%; vertical-align: top;}
+    }
+}
+
+.shop-loca{
+    width:95%; margin:0 auto;
+    padding-bottom:1rem;
+    div{
+        width:50%; margin-left:auto;
+        padding-left:0.625rem; padding-right:5rem;
+        padding-bottom:4.5rem;
+        h2{
+            font-family: 'Inter', sans-serif;
+            font-weight:500;
+            line-height:1.5rem;
+            padding-bottom:3rem;
+            font-size:1.2rem;
+        }
+        h5{@include text01;
+            padding-bottom:0.5rem;
+            padding-top:2rem;}
+        p{
+            font-weight: 300;
+            font-size:0.9rem;
+            padding-bottom:0.5rem;
+            line-height:1.5rem;
+            }
+    }
+}
