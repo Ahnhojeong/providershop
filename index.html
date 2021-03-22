@@ -7,16 +7,24 @@
     <title>Provider Store</title>
     <link href="css/main.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://raw.github.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body class="active">
+    <div class="cursor"></div>
+    <div class="page-loader"></div>
 
     <header>
         <div class="head-wrap">
             <div class="head">
 
                     <h1 class="logo">
-                        <a href="#">
+                        <a href="index.html">
                             <svg class="logo_dark" width="69px" height="68px" viewBox="0 0 69 68">
                                 <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Logo---Dark" transform="translate(1.000000, 0.000000)" fill="#313942" stroke="#313942" stroke-width="0.2">
@@ -62,11 +70,11 @@
                         </a>
                     </h1>
 
-                <input type="checkbox" class="openmenu" id="openmenu">
-                <label for="openmenu" class="burger">
+                <!-- <input type="checkbox" class="openmenu" id="openmenu"> -->
+                <a href="#" class="burger">
                     <span class="burger-top"></span>
                     <span class="burger-bottom"></span>
-                </label>
+                </a>
 
 
                 <nav class="menuwrap">
@@ -78,7 +86,7 @@
                                         <span class="linkevent">Shop</span>
                                         <div class="menu-icon">
                                             <svg x="0px" y="0px" viewBox="0 0 24 24">
-                                                <polygon style="fill:#FFFFFF;" points="12,14.71 7.65,10.35 8.35,9.65 12,13.29 15.65,9.65 16.35,10.35 "></polygon>
+                                                <polygon style="fill:#FFFFFF;" points="12,14.71 7.65,10.35 8.35,9.65 12,13.29 15.65,9.65 16.35,10.35"></polygon>
                                             </svg>
                                         </div>
                                     </a>
@@ -125,10 +133,10 @@
                                 <a href="#" class="arrow-wrap">
                                     <div class="arrow reverse">
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                     </div>
                                 </a>
@@ -159,10 +167,10 @@
                                     <p>by Sadaaki Kido</p>
                                     <div class="arrow reverse">
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                     </div>
                                 </a>
@@ -188,7 +196,7 @@
                         </figure>
                     </div>
                     <div class="stamp">
-                        <figure>
+                        <figure class="move">
                             <img src="imgs/New_Arrivals_Stamp.png" alt="stamp">
                         </figure>
                     </div>
@@ -201,49 +209,73 @@
                             </a>
                         </div>
                         <div class="gallery-wrap">
-                            <div class="gallery-list">
-                                <a href="#" class="gallery-item">
-                                    <figure class="item-bg one">
-                                        <!-- <img src="imgs/HibachiSmallcopy_640x.jpg" alt="hibachi_grill"> -->
-                                    </figure>
-                                    <div>
-                                        <h4 class="item-head-text">Mini Hibachi Grill</h4>
-                                        <p class="regular-text">$160</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery-list">
-                                <a href="#" class="gallery-item">
-                                    <figure class="item-bg two">
-                                        <!-- <img src="imgs/FishOfFortune_640x.jpg" alt="fish"> -->
-                                    </figure>
-                                    <div>
-                                        <h4 class="item-head-text">Paper-Mache Fortune Fish</h4>
-                                        <p class="regular-text">$85</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery-list">
-                                <a href="#" class="gallery-item">
-                                    <figure class="item-bg three">
-                                        <!-- <img src="imgs/hinokicypressoapdish_640x.jpg" alt="soap_dish"> -->
-                                    </figure>
-                                    <div>
-                                        <h4 class="item-head-text">Hinoki Soap Dish</h4>
-                                        <p class="regular-text">$45</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="gallery-list">
-                                <a href="#" class="gallery-item">
-                                    <figure class="item-bg four">
-                                        <!-- <img src="imgs/ArtificerxProviderCandle_640x.jpg" alt="soap_dish"> -->
-                                    </figure>
-                                    <div>
-                                        <h4 class="item-head-text">Artificer x Provider Store Ceramic Candle Cup</h4>
-                                        <p class="regular-text">$69</p>
-                                    </div>
-                                </a>
+                            <div class="gallery-wrap-container">
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg one">
+                                            <!-- <img src="imgs/HibachiSmallcopy_640x.jpg" alt="hibachi_grill"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Mini Hibachi Grill</h4>
+                                            <p class="regular-text">$160</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg two">
+                                            <!-- <img src="imgs/FishOfFortune_640x.jpg" alt="fish"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Paper-Mache Fortune Fish</h4>
+                                            <p class="regular-text">$85</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg three">
+                                            <!-- <img src="imgs/hinokicypressoapdish_640x.jpg" alt="soap_dish"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Hinoki Soap Dish</h4>
+                                            <p class="regular-text">$45</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg four">
+                                            <!-- <img src="imgs/ArtificerxProviderCandle_640x.jpg" alt="soap_dish"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Artificer x Provider Store Ceramic Candle Cup</h4>
+                                            <p class="regular-text">$69</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg one">
+                                            <!-- <img src="imgs/HibachiSmallcopy_640x.jpg" alt="hibachi_grill"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Mini Hibachi Grill</h4>
+                                            <p class="regular-text">$160</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-list">
+                                    <a href="#" class="gallery-item">
+                                        <figure class="item-bg two">
+                                            <!-- <img src="imgs/FishOfFortune_640x.jpg" alt="fish"> -->
+                                        </figure>
+                                        <div>
+                                            <h4 class="item-head-text">Paper-Mache Fortune Fish</h4>
+                                            <p class="regular-text">$85</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -270,10 +302,10 @@
                                     <div class="arrow-wrap">
                                         <div class="arrow normal">
                                             <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                             </svg>
                                             <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                             </svg>
                                         </div>
                                     </div>
@@ -329,10 +361,10 @@
                                             <div class="arrow-wrap">
                                                 <div class="arrow normal">
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -353,10 +385,10 @@
                                             <div class="arrow-wrap">
                                                 <div class="arrow normal">
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -377,10 +409,10 @@
                                             <div class="arrow-wrap">
                                                 <div class="arrow normal">
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                     <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                        <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -431,10 +463,10 @@
                                         <div class="arrow-wrap">
                                             <div class="arrow normal">
                                                 <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                 </svg>
                                                 <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                 </svg>
                                             </div>
                                         </div>
@@ -531,10 +563,10 @@
                                         <div class="arrow-wrap">
                                             <div class="arrow normal">
                                                 <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                 </svg>
                                                 <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                                    <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                                 </svg>
                                             </div>
                                         </div>
@@ -657,10 +689,10 @@
                                 <a href="#" class="arrow-wrap">
                                     <div class="arrow mail">
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                         <svg x="0px" y="0px" viewBox="0 0 22 10">
-                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5 "></polygon>
+                                            <polygon style="fill:#999B9D;" points="17,0.65 16.29,1.35 19.44,4.5 0.65,4.5 0.65,5.5 19.44,5.5 16.29,8.65 17,9.35 21.35,5"></polygon>
                                         </svg>
                                     </div>
                                 </a>
@@ -698,6 +730,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

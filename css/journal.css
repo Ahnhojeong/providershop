@@ -49,9 +49,16 @@ body.active .headcover {
 }
 
 .journal {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   width: 100%;
   margin: 0 auto;
   padding: 17rem 0;
+  -webkit-animation: loading 1s 1s forwards;
+          animation: loading 1s 1s forwards;
 }
 
 .journal .gallery-intro-header {
@@ -193,5 +200,21 @@ body.active .headcover {
 .journal .journal-wrap .journal-small a .journal-sum {
   padding-top: 1.5rem;
   padding-bottom: 3rem;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=journal.css.map */

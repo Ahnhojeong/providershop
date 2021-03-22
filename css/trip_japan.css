@@ -106,6 +106,32 @@ main, .blog-wrap {
   width: 100%;
 }
 
+.loadng {
+  -webkit-transform: translate3d(0, 2%, 0);
+          transform: translate3d(0, 2%, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: loading 1s 1s forwards;
+          animation: loading 1s 1s forwards;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .trip-japan {
   background-image: url("../imgs/nara_1920x.jpg");
 }

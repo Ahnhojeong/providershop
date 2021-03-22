@@ -55,6 +55,10 @@ body {
   background-color: #EDECE9;
 }
 
+main {
+  overflow: hidden;
+}
+
 .none {
   text-indent: -9999px;
   display: none;
@@ -200,12 +204,72 @@ body {
   opacity: 0.3;
 }
 
+.cursor {
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid #D4952E;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.cursor.active {
+  width: 4rem;
+  height: 4rem;
+}
+
+.page-loader {
+  height: 0.125rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  background-color: #596460;
+  -webkit-transition: width 250ms;
+  transition: width 250ms;
+  z-index: 10000;
+}
+
+body.active .page-loader {
+  -webkit-animation: loader 0.5s 0.5s forwards;
+          animation: loader 0.5s 0.5s forwards;
+}
+
+@-webkit-keyframes loader {
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0px;
+  }
+}
+
+@keyframes loader {
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0px;
+  }
+}
+
 /* -------------------- header -------------------- */
 header {
   width: 100%;
   height: 5.75rem;
   position: fixed;
   z-index: 1000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .head-wrap {
@@ -385,6 +449,26 @@ header {
   padding-bottom: 0.5rem;
 }
 
+.head.sticky::before {
+  opacity: 1;
+}
+
+.head.sticky .logo a .logo_dark {
+  opacity: 1;
+}
+
+.head.sticky .logo a .logo_light {
+  opacity: 0;
+}
+
+.head.sticky .burger .burger-top {
+  background-color: black;
+}
+
+.head.sticky .burger .burger-bottom {
+  background-color: black;
+}
+
 /* ----------  header menu trigger ---------- */
 .openmenu:checked + .burger + .menuwrap {
   width: 100%;
@@ -414,7 +498,7 @@ header {
   margin-left: auto;
   display: inline-block;
   position: relative;
-  width: 2rem;
+  width: 1.5rem;
   height: 1.5rem;
   z-index: 2;
 }
@@ -423,7 +507,7 @@ header {
   display: inline-block;
   position: absolute;
   right: 0;
-  width: 1.5rem;
+  width: 100%;
   height: 0.125rem;
   background-color: white;
 }

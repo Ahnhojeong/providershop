@@ -85,6 +85,9 @@
   .gallery-intro-header .home-header {
     width: 100% !important;
   }
+  .shop-gallery {
+    padding-top: 10rem !important;
+  }
   .shop-gallery .gallery-intro-header .shop-count-link {
     width: 100% !important;
   }
@@ -160,6 +163,9 @@
   .home-favorite .favorite-wrap .division .division-small .small-img {
     height: 30vh !important;
   }
+  .home-favorite .ramen {
+    width: 35% !important;
+  }
   .home-feature {
     display: block !important;
   }
@@ -180,6 +186,10 @@
   }
   .home-feature .feature-sum {
     width: 100% !important;
+  }
+  .sushi figure {
+    width: 50% !important;
+    margin-left: 50% !important;
   }
   .journal {
     padding: 11rem 0 !important;

@@ -180,7 +180,7 @@ body.active .maincover {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
@@ -293,7 +293,10 @@ body.active .maincover {
 }
 
 .new-arrival .character {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .new-arrival .character figure {
@@ -310,33 +313,49 @@ body.active .maincover {
 }
 
 .new-arrival .stamp {
-  position: relative;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20em;
+  margin-left: 65%;
+  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.new-arrival .stamp.scroll {
+  top: 20%;
 }
 
 .new-arrival .stamp figure {
   position: absolute;
-  right: 5%;
-  -webkit-transform: translateX(-25%) translateY(100%);
-          transform: translateX(-25%) translateY(100%);
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .new-arrival .stamp figure img {
-  width: 200px;
+  width: 100%;
+  vertical-align: top;
 }
 
 .shop-gallery {
   padding-top: 18.75rem;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.shop-gallery .gallery-intro-header::after {
+.shop-gallery .gallery-intro-header {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+.shop-gallery::after {
   content: '';
   display: inline-block;
   clear: both;
 }
 
-.shop-gallery .gallery-intro-header .shop-count-link {
+.shop-gallery .shop-count-link {
   float: right;
   width: 50%;
   margin-bottom: 0.095em;
@@ -348,75 +367,79 @@ body.active .maincover {
 .gallery-wrap {
   width: 100%;
   height: 100%;
+  padding: 0 2.5rem;
+}
+
+.gallery-wrap .gallery-wrap-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
 }
 
-.gallery-wrap .gallery-list {
+.gallery-wrap .gallery-wrap-container .gallery-list {
   width: 25%;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.gallery-wrap .gallery-list .gallery-item {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item {
   width: 100%;
   height: 100%;
 }
 
-.gallery-wrap .gallery-list .gallery-item:hover .one {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item:hover .one {
   background-image: url("../imgs/Hibachi_port_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item:hover .two {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item:hover .two {
   background-image: url("../imgs/FishOfFortunePort_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item:hover .three {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item:hover .three {
   background-image: url("../imgs/SoapDish_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item:hover .four {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item:hover .four {
   background-image: url("../imgs/artificerCandle_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item .item-bg {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item .item-bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.gallery-wrap .gallery-list .gallery-item figure {
-  height: 450px;
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item figure {
+  height: 500px;
   width: 100%;
   overflow: hidden;
 }
 
-.gallery-wrap .gallery-list .gallery-item figure img {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item figure img {
   height: 100%;
   width: 100%;
 }
 
-.gallery-wrap .gallery-list .gallery-item .one {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item .one {
   background-image: url("../imgs/HibachiSmallcopy_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item .two {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item .two {
   background-image: url("../imgs/FishOfFortune_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item .three {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item .three {
   background-image: url("../imgs/hinokicypressoapdish_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item .four {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item .four {
   background-image: url("../imgs/ArtificerxProviderCandle_640x.jpg");
 }
 
-.gallery-wrap .gallery-list .gallery-item div {
+.gallery-wrap .gallery-wrap-container .gallery-list .gallery-item div {
   padding-top: 0.75rem;
 }
 
@@ -431,9 +454,15 @@ body.active .maincover {
 .home-about .sushi-img {
   position: absolute;
   left: 25%;
-  top: 0;
+  top: 0%;
   padding-bottom: 25%;
   width: 25%;
+  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.home-about .sushi-img.scroll {
+  top: 10%;
 }
 
 .home-about .sushi-img figure {
@@ -524,16 +553,25 @@ body.active .maincover {
 .home-favorite {
   width: 95%;
   margin: 0 auto;
-}
-
-.home-favorite .ramen {
   position: relative;
 }
 
-.home-favorite .ramen figure {
+.home-favorite .ramen {
   position: absolute;
   right: 0;
+  top: -5%;
+  z-index: 10;
   width: 20%;
+  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.home-favorite .ramen.scroll {
+  top: 5%;
+}
+
+.home-favorite .ramen figure {
+  width: 100%;
 }
 
 .home-favorite .ramen figure img {
@@ -801,15 +839,20 @@ body.active .maincover {
 .index-journal {
   width: 100%;
   margin: 0 auto;
-}
-
-.index-journal .journal-text {
   position: relative;
 }
 
-.index-journal .journal-text figure {
+.index-journal .journal-text {
   position: absolute;
   width: 25rem;
+  top: 0;
+  left: 0;
+  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.index-journal .journal-text.scroll {
+  top: 10%;
 }
 
 .index-journal .journal-text figure img {
@@ -821,7 +864,7 @@ body.active .maincover {
 }
 
 .journal-wrap {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,11 +1077,20 @@ body.active .maincover {
 
 .sushi {
   width: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.sushi.scroll {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .sushi figure {
   width: 15%;
-  margin-left: 50%;
+  margin-left: 65%;
 }
 
 .sushi figure img {

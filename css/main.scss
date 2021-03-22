@@ -156,7 +156,7 @@ body.active .maincover{
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     }
     .home-intro-wrap{
@@ -249,7 +249,10 @@ body.active .maincover{
     position:relative;
     
     .character{
-        position: relative;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
         figure{
             position:absolute;
             right:2.5%;
@@ -261,20 +264,31 @@ body.active .maincover{
 }
 
 .new-arrival .stamp{
-    position: relative;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20em;
+    margin-left: 65%;
+    transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    &.scroll{
+        top:20%;
+    }
     figure{
         position:absolute;
-        right:5%;
-        transform:translateX(-25%) translateY(100%);
-        img{ width:200px;}
+        left:0;
+        top: 0;
+        z-index: 10;
+        img{width:100%; vertical-align: top;}
     }
 }
 
 
 .shop-gallery{
     padding-top:18.75rem;
-    width:95%; margin:0 auto;
+    width:100%; margin: 0 auto;
     .gallery-intro-header{
+        width:95%; margin: 0 2.5%;
+    }
         &::after{
             content:'';
             display:inline-block;
@@ -287,43 +301,50 @@ body.active .maincover{
             padding-bottom:1.75rem;
             padding-left:0.625rem; padding-right:0.625rem;
         }
-    }
 }
 
 
 .gallery-wrap{
     width:100%; height:100%;
-    display:flex;
-    justify-content: space-between;
-    .gallery-list{
-            width:25%;
-            padding-left:0.625rem; padding-right:0.625rem;
-        .gallery-item{
-            width:100%; height:100%;
-            &:hover .one{background-image:url('../imgs/Hibachi_port_640x.jpg');}
-            &:hover .two{background-image:url('../imgs/FishOfFortunePort_640x.jpg');}
-            &:hover .three{background-image:url('../imgs/SoapDish_640x.jpg');}
-            &:hover .four{background-image:url('../imgs/artificerCandle_640x.jpg');}
-            .item-bg{
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position:center;
-            }
-            figure{
-                height:450px; width:100%;
-                overflow:hidden;
-                img{height:100%; width:100%;}
-            }
-            .one{
-                background-image:url('../imgs/HibachiSmallcopy_640x.jpg');
-            }
-            .two{
-                background-image:url('../imgs/FishOfFortune_640x.jpg');
-            }
-            .three{background-image:url('../imgs/hinokicypressoapdish_640x.jpg');}
-            .four{background-image:url('../imgs/ArtificerxProviderCandle_640x.jpg');}
-            div{
-                padding-top:0.75rem;
+    padding: 0 2.5rem;
+    .gallery-wrap-container{
+        display: flex;
+        box-sizing: content-box;
+        width:100%;
+        
+        .gallery-list{
+                width:25%;
+                padding-left:0.625rem; padding-right:0.625rem;
+                // position: absolute;
+                // top: 0;
+            .gallery-item{
+                //display: inline-block;
+                width:100%; height:100%;
+                &:hover .one{background-image:url('../imgs/Hibachi_port_640x.jpg');}
+                &:hover .two{background-image:url('../imgs/FishOfFortunePort_640x.jpg');}
+                &:hover .three{background-image:url('../imgs/SoapDish_640x.jpg');}
+                &:hover .four{background-image:url('../imgs/artificerCandle_640x.jpg');}
+                .item-bg{
+                    background-repeat: no-repeat;
+                    background-size:cover;
+                    background-position:center;
+                }
+                figure{
+                    height:500px; width:100%;
+                    overflow:hidden;
+                    img{height:100%; width:100%;}
+                }
+                .one{
+                    background-image:url('../imgs/HibachiSmallcopy_640x.jpg');
+                }
+                .two{
+                    background-image:url('../imgs/FishOfFortune_640x.jpg');
+                }
+                .three{background-image:url('../imgs/hinokicypressoapdish_640x.jpg');}
+                .four{background-image:url('../imgs/ArtificerxProviderCandle_640x.jpg');}
+                div{
+                    padding-top:0.75rem;
+                }
             }
         }
     }
@@ -340,9 +361,13 @@ body.active .maincover{
     
     .sushi-img{
         position:absolute;
-        left:25%; top:0;
+        left:25%; top:0%;
         padding-bottom: 25%;
         width: 25%;
+        transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        &.scroll{
+            top:10%;
+        }
         figure{
             position:absolute;
             left:0; top:0;
@@ -352,6 +377,7 @@ body.active .maincover{
             }
         }
     }
+
     .about-image{
         width:100%; overflow: hidden;
         padding-left:0.625rem; padding-right:0.625rem;
@@ -369,6 +395,8 @@ body.active .maincover{
 
     }
 }
+
+
 .paragraph-wrap{
     width:100%;
     position:relative;
@@ -411,11 +439,19 @@ body.active .maincover{
 
 .home-favorite{
     width:95%; margin:0 auto;
+    position:relative;
     .ramen{
-        position:relative;
+        position: absolute;
+        right:0;
+        top: -5%;
+        z-index: 10;
+        width: 20%;
+        transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        &.scroll{
+            top:5%;
+        }
         figure{
-            position:absolute; right:0;
-            width:20%;
+            width:100%;
             img{
                 width:100%; vertical-align: top;
             }
@@ -592,11 +628,17 @@ body.active .maincover{
 
 .index-journal{
     width:100%; margin:0 auto;
+    position: relative;
     .journal-text{
-        position:relative;
+        position: absolute;
+        width: 25rem;
+        top: 0;
+        left: 0;
+        transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        &.scroll{
+            top:10%;
+        }
         figure{
-            position:absolute;
-            width:25rem;
             img{width:100%;}
         }
     }
@@ -604,7 +646,7 @@ body.active .maincover{
 }
 
 .journal-wrap{
-    width:100%; margin:0 auto;
+    width:95%; margin:0 auto;
     display:flex; justify-content: space-between;
     flex-wrap: wrap;
     article{
@@ -759,9 +801,14 @@ body.active .maincover{
 }
 .sushi{
     width:100%;
+    transform:translateY(0);
+    transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    &.scroll{
+        transform:translateY(50%);
+    }
     figure{
         width:15%;
-        margin-left:50%;
+        margin-left: 65%;
         img{
             width:100%;}
         }

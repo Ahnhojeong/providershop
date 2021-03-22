@@ -85,6 +85,18 @@ body.active .maincover{
 
 
 main, .blog-wrap{width:100%;}
+.loadng{
+    transform: translate3d(0,2%,0);
+    opacity:0;
+    transition:all 1s;
+    animation: loading 1s 1s forwards;
+}
+@keyframes loading{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 //.head .burger span {background-color: white;}
 
 
