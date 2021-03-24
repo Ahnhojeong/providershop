@@ -318,8 +318,8 @@ body.active .maincover {
   top: 0;
   width: 20em;
   margin-left: 65%;
-  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .new-arrival .stamp.scroll {
@@ -365,9 +365,9 @@ body.active .maincover {
 }
 
 .gallery-wrap {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   height: 100%;
-  padding: 0 2.5rem;
 }
 
 .gallery-wrap .gallery-wrap-container {
@@ -413,7 +413,7 @@ body.active .maincover {
 }
 
 .gallery-wrap .gallery-wrap-container .gallery-list .gallery-item figure {
-  height: 500px;
+  padding-top: 150%;
   width: 100%;
   overflow: hidden;
 }
@@ -457,8 +457,8 @@ body.active .maincover {
   top: 0%;
   padding-bottom: 25%;
   width: 25%;
-  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .home-about .sushi-img.scroll {
@@ -562,8 +562,8 @@ body.active .maincover {
   top: -5%;
   z-index: 10;
   width: 20%;
-  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .home-favorite .ramen.scroll {
@@ -847,8 +847,8 @@ body.active .maincover {
   width: 25rem;
   top: 0;
   left: 0;
-  -webkit-transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .index-journal .journal-text.scroll {
@@ -1021,39 +1021,42 @@ body.active .maincover {
 
 .w-gallery {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   padding-right: 0.625rem;
   border-left: 1px solid #dddbd7;
 }
 
-.w-gallery .w-gallery-list {
+.w-gallery div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.w-gallery div .w-gallery-list {
   width: 100%;
   padding-bottom: 5rem;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
 }
 
-.w-gallery .w-gallery-list figure {
+.w-gallery div .w-gallery-list figure {
   width: 100%;
   height: 100%;
 }
 
-.w-gallery .w-gallery-list figure img {
+.w-gallery div .w-gallery-list figure img {
   height: 100%;
   vertical-align: top;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.w-gallery .w-gallery-list div {
+.w-gallery div .w-gallery-list div {
   padding-top: 0.75rem;
 }
 
-.w-gallery .w-gallery-list div h6 {
+.w-gallery div .w-gallery-list div h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
@@ -1061,17 +1064,17 @@ body.active .maincover {
   color: #566962;
 }
 
-.w-gallery .w-gallery-list div p {
+.w-gallery div .w-gallery-list div p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #566962;
 }
 
-.w-gallery .one {
+.w-gallery div .one {
   height: 750px;
 }
 
-.w-gallery .two {
+.w-gallery div .two {
   height: 400px;
 }
 
@@ -1079,8 +1082,8 @@ body.active .maincover {
   width: 100%;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: 5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .sushi.scroll {
@@ -1124,6 +1127,9 @@ body.active .maincover {
 
 .instagram .insta-wrap .insta-gallery {
   width: 100%;
+}
+
+.instagram .insta-wrap .insta-gallery .insta-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1132,7 +1138,7 @@ body.active .maincover {
           justify-content: space-between;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list {
   width: 25%;
   overflow: hidden;
   padding-left: 0.625rem;
@@ -1140,13 +1146,13 @@ body.active .maincover {
   padding-bottom: 4.5rem;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list figure {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list figure {
   width: 100%;
   padding-top: 100%;
   position: relative;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list figure img {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list figure img {
   width: 100%;
   height: 100%;
   vertical-align: top;
@@ -1157,36 +1163,36 @@ body.active .maincover {
      object-fit: cover;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div {
   width: 100%;
   padding-top: 0.75rem;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div h4 {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div h4 {
   padding-bottom: 0.25rem;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div p {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div p {
   padding: 0.5rem 0;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div .view-insta {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div .view-insta {
   position: relative;
   display: inline-block;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div .view-insta:hover span::before {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div .view-insta:hover span::before {
   width: 100%;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div .view-insta span {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div .view-insta span {
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   padding-top: 0.5rem;
 }
 
-.instagram .insta-wrap .insta-gallery .insta-list div .view-insta span::before {
+.instagram .insta-wrap .insta-gallery .insta-slide .insta-list div .view-insta span::before {
   content: '';
   width: 0;
   height: 0.0625rem;

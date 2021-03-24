@@ -10,8 +10,9 @@ $(function () {
     });
 
     //menu
-    $('.burger').on('click',function(){
-        
+    $('.burger').on('click',function(e){
+        e.preventDefault();
+        $('.menuwrap, .burger').toggleClass('active');
     })
 
 
@@ -63,49 +64,81 @@ $(function () {
 
 
 
-//drag event
-var mPos = { start: 0, end: 0 }, num = 0,
-    itemEl = $('.gallery-list').length,
-    itemWid = $('.gallery-list:first').width() / 2;
+//drag event - slick
 
-$('.gallery-wrap-container').draggable({
-    axis: 'x',
-    start: function (e) {
-        mPos.start = e.pageX;
-    },
-    drag: function () { },
-    stop: function (e) {
-        mPos.end = e.pageX;
-        dragAni();
-    }
-});
-$('.w-gallery div').draggable({
-    axis: 'x',
-    start: function (e) {
-        mPos.start = e.pageX;
-    },
-    drag: function () { },
-    stop: function (e) {
-        mPos.end = e.pageX;
-        dragAni();
-    }
-})
-function dragAni() {
-    var dragNum = Math.abs(mPos.start - mPos.end);
-    if (itemWid < dragNum) {
-        if (mPos.start < mPos.end) {
-            if (num > 0) num--;
-        } else {
-            if (num < itemEl - 1) num++;
-        }
-    }
+    $('.gallery-wrap-container').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
 
-    $('.gallery-wrap-container').animate({
-        left: -25 * num + '%'
-    })
-}
+        ]
+      });
 
+      $('.w-gallery div').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        variableWidth: true
+      });
+        
+      
+      $('.insta-slide').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
 
+        ]
+      });
 
 
     

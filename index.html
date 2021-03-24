@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://raw.github.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -575,43 +575,45 @@
                             </div>
                         </aside>
                         <ul class="w-gallery">
-                            <li class="w-gallery-list one">
-                                <figure>
-                                    <img src="imgs/workshop_classes_5bbade6e-5878-4077-b250-b2700ead8637_640x.jpg"
-                                        alt="workshop">
-                                </figure>
-                                <div>
-                                    <h6>01</h6>
-                                    <p>Pouring pure soy wax.</p>
-                                </div>
-                            </li>
-                            <li class="w-gallery-list two">
-                                <figure>
-                                    <img src="imgs/virtualworkshop_640x.jpg" alt="workshop">
-                                </figure>
-                                <div>
-                                    <h6>02</h6>
-                                    <p>Our virtual workshop kit.</p>
-                                </div>
-                            </li>
-                            <li class="w-gallery-list one">
-                                <figure>
-                                    <img src="imgs/Candle_workshop_1_2x_a83f0205-e7a1-4efa-96cc-ab906c2923d6_640x.jpg" alt="workshop">
-                                </figure>
-                                <div>
-                                    <h6>03</h6>
-                                    <p>Workshop set up in our Surry Hills Studio. Running again in 2021.</p>
-                                </div>
-                            </li>
-                            <li class="w-gallery-list two">
-                                <figure>
-                                    <img src="imgs/Candle_workshop_2_640x.jpg" alt="workshop">
-                                </figure>
-                                <div>
-                                    <h6>04</h6>
-                                    <p>Students enjoying their class.</p>
-                                </div>
-                            </li>
+                            <div>
+                                <li class="w-gallery-list one">
+                                    <figure>
+                                        <img src="imgs/workshop_classes_5bbade6e-5878-4077-b250-b2700ead8637_640x.jpg"
+                                            alt="workshop">
+                                    </figure>
+                                    <div>
+                                        <h6>01</h6>
+                                        <p>Pouring pure soy wax.</p>
+                                    </div>
+                                </li>
+                                <li class="w-gallery-list two">
+                                    <figure>
+                                        <img src="imgs/virtualworkshop_640x.jpg" alt="workshop">
+                                    </figure>
+                                    <div>
+                                        <h6>02</h6>
+                                        <p>Our virtual workshop kit.</p>
+                                    </div>
+                                </li>
+                                <li class="w-gallery-list one">
+                                    <figure>
+                                        <img src="imgs/Candle_workshop_1_2x_a83f0205-e7a1-4efa-96cc-ab906c2923d6_640x.jpg" alt="workshop">
+                                    </figure>
+                                    <div>
+                                        <h6>03</h6>
+                                        <p>Workshop set up in our Surry Hills Studio. Running again in 2021.</p>
+                                    </div>
+                                </li>
+                                <li class="w-gallery-list two">
+                                    <figure>
+                                        <img src="imgs/Candle_workshop_2_640x.jpg" alt="workshop">
+                                    </figure>
+                                    <div>
+                                        <h6>04</h6>
+                                        <p>Students enjoying their class.</p>
+                                    </div>
+                                </li>
+                            </div>
                         </ul>
                     </div>
                     <div class="sushi">
@@ -631,43 +633,84 @@
                         </a>
                     </div>
                     <article class="insta-gallery">
-                        <div class="insta-list">
-                            <figure><img src="imgs/instafeed_01.jpg" alt="instafeed"></figure>
-                            <div>
-                                <h4>February 2, 2021</h4>
-                                <p>Sustainable in design and natural is make, our signature candle collection come in
-                                    array of Japanese ceramic cups and are scented with our seven unique and complex
-                                    aromas. After its burn life repurpose as your Japanese tea cup or return to the
-                                    store for a refill ✨</p>
-                                <a herf="https://www.instagram.com/p/CKw1E_KHS6Q/?igshid=64n7ntht0cbp" class="view-insta"><span>View on Instagram</span></a>
+                        <div class="insta-slide">
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_01.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>February 2, 2021</h4>
+                                    <p>Sustainable in design and natural is make, our signature candle collection come in
+                                        array of Japanese ceramic cups and are scented with our seven unique and complex
+                                        aromas. After its burn life repurpose as your Japanese tea cup or return to the
+                                        store for a refill ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKw1E_KHS6Q/?igshid=64n7ntht0cbp" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="insta-list">
-                            <figure><img src="imgs/instafeed_02.jpg" alt="instafeed"></figure>
-                            <div>
-                                <h4>January 31, 2021</h4>
-                                <p>It’s the perfect day in Sydney for burning candles and filling your living space with
-                                    nice home things. We are open 11-3 ✨</p>
-                                <a herf="https://www.instagram.com/p/CKsFSZPHn5z/?igshid=tk24eefw0gzd" class="view-insta"><span>View on Instagram</span></a>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_02.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 31, 2021</h4>
+                                    <p>It’s the perfect day in Sydney for burning candles and filling your living space with
+                                        nice home things. We are open 11-3 ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKsFSZPHn5z/?igshid=tk24eefw0gzd" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="insta-list">
-                            <figure><img src="imgs/instafeed_03.jpg" alt="instafeed"></figure>
-                            <div>
-                                <h4>January 30, 2021</h4>
-                                <p>The Tokoname Stone Diffuser is our favourite daily ritual. Simply add a few drops of
-                                    essential oil to the surface and it’ll naturally infuse your space with the aroma.
-                                    Being ceramic, the stone is porous allowing the oils to seep in and lift off - no
-                                    fire or electricity needed. In store and online ✨</p>
-                                <a herf="https://www.instagram.com/p/CKpL6UknILc/?igshid=1ldqgw42sq7bs" class="view-insta"><span>View on Instagram</span></a>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_03.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 30, 2021</h4>
+                                    <p>The Tokoname Stone Diffuser is our favourite daily ritual. Simply add a few drops of
+                                        essential oil to the surface and it’ll naturally infuse your space with the aroma.
+                                        Being ceramic, the stone is porous allowing the oils to seep in and lift off - no
+                                        fire or electricity needed. In store and online ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKpL6UknILc/?igshid=1ldqgw42sq7bs" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="insta-list">
-                            <figure><img src="imgs/instafeed_04.jpg" alt="instafeed"></figure>
-                            <div>
-                                <h4>January 29, 2021</h4>
-                                <p>Pretty things on film by @nicktsindos for Provider. See you all today from 10am ✨</p>
-                                <a herf="https://www.instagram.com/p/CKmc_p-nF37/?igshid=1hl0d4qmwczd" class="view-insta"><span>View on Instagram</span></a>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_04.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 29, 2021</h4>
+                                    <p>Pretty things on film by @nicktsindos for Provider. See you all today from 10am ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKmc_p-nF37/?igshid=1hl0d4qmwczd" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
+                            </div>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_01.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>February 2, 2021</h4>
+                                    <p>Sustainable in design and natural is make, our signature candle collection come in
+                                        array of Japanese ceramic cups and are scented with our seven unique and complex
+                                        aromas. After its burn life repurpose as your Japanese tea cup or return to the
+                                        store for a refill ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKw1E_KHS6Q/?igshid=64n7ntht0cbp" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
+                            </div>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_02.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 31, 2021</h4>
+                                    <p>It’s the perfect day in Sydney for burning candles and filling your living space with
+                                        nice home things. We are open 11-3 ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKsFSZPHn5z/?igshid=tk24eefw0gzd" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
+                            </div>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_03.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 30, 2021</h4>
+                                    <p>The Tokoname Stone Diffuser is our favourite daily ritual. Simply add a few drops of
+                                        essential oil to the surface and it’ll naturally infuse your space with the aroma.
+                                        Being ceramic, the stone is porous allowing the oils to seep in and lift off - no
+                                        fire or electricity needed. In store and online ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKpL6UknILc/?igshid=1ldqgw42sq7bs" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
+                            </div>
+                            <div class="insta-list">
+                                <figure><img src="imgs/instafeed_04.jpg" alt="instafeed"></figure>
+                                <div>
+                                    <h4>January 29, 2021</h4>
+                                    <p>Pretty things on film by @nicktsindos for Provider. See you all today from 10am ✨</p>
+                                    <a herf="https://www.instagram.com/p/CKmc_p-nF37/?igshid=1hl0d4qmwczd" class="view-insta"><span>View on Instagram</span></a>
+                                </div>
                             </div>
                         </div>
                     </article>

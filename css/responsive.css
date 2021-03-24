@@ -25,7 +25,7 @@
   .footer-wrap .creatpage .web-made p:nth-of-type(2) {
     width: 50% !important;
   }
-  .openmenu:checked + .burger + .menuwrap .menuinner {
+  .menuwrap .menuinner {
     padding-top: 9rem !important;
     padding-left: 1.25rem !important;
     padding-right: 4.25rem !important;
@@ -95,13 +95,13 @@
     padding-top: 10rem !important;
   }
   .index-journal .divisionwrap .division .division-big {
-    width: 33.33333% !important;
+    width: 100% !important;
   }
   .index-journal .divisionwrap .division .division-big .big-img {
     height: 30vh !important;
   }
   .index-journal .divisionwrap .division .division-small {
-    width: 33.33333% !important;
+    width: 100% !important;
   }
   .index-journal .divisionwrap .division .division-small .small-img {
     height: 30vh !important;
@@ -114,7 +114,7 @@
   }
   .home-about .about-image .sub-paragraph {
     display: block !important;
-    width: 50%;
+    width: 100%;
   }
   .home-about .about-image .sub-paragraph div {
     width: 100%;
@@ -191,31 +191,46 @@
     width: 50% !important;
     margin-left: 50% !important;
   }
-  .journal {
-    padding: 11rem 0 !important;
+  .journal-wrap .journal-small a .journal-sum {
+    padding-bottom: 2.5rem !important;
   }
-  .journal .journal-wrap {
+  .home-workshop .workshop-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .journal .journal-wrap article {
+  .home-workshop .workshop-wrap .w-content {
+    width: 100% !important;
+  }
+  .home-workshop .workshop-wrap .w-gallery {
+    width: 100% !important;
+  }
+  .journal {
+    padding: 11rem 0 !important;
+  }
+  .journal-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .journal-wrap article {
     border-left: none !important;
   }
-  .journal .journal-wrap .journal-big {
+  .journal-wrap .journal-big {
     width: 100% !important;
   }
-  .journal .journal-wrap .journal-big a .journal-img {
+  .journal-wrap .journal-big a .journal-img {
     height: 60vh !important;
   }
-  .journal .journal-wrap .map {
+  .journal-wrap .map {
     display: none;
   }
-  .journal .journal-wrap .journal-small {
+  .journal-wrap .journal-small {
     width: 100% !important;
   }
-  .journal .journal-wrap .journal-small a .journal-img {
+  .journal-wrap .journal-small a .journal-img {
     height: 60vh !important;
   }
   .workshops .workshop-header {
@@ -426,7 +441,7 @@
   .footer-wrap .creatpage .web-made p:nth-of-type(2) {
     width: 50% !important;
   }
-  .openmenu:checked + .burger + .menuwrap .menuinner {
+  .menuwrap .menuinner {
     padding-top: 9rem !important;
     padding-left: 1.25rem !important;
     padding-bottom: 1.25rem !important;
@@ -843,6 +858,9 @@
   }
   .shop-gallery .gallery-intro-header .shop-count-link {
     width: 33.3333% !important;
+  }
+  .gallery-wrap .gallery-item figure {
+    height: 350px;
   }
   .journal .journal-wrap .journal-big {
     width: 33.3333% !important;

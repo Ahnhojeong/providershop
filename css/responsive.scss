@@ -24,7 +24,7 @@
     .footer-wrap .creatpage .web-made p:nth-of-type(2) {
         width: 50% !important;
     }
-    .openmenu:checked + .burger + .menuwrap .menuinner{
+    .menuwrap .menuinner{
         padding-top: 9rem !important;
         padding-left: 1.25rem !important;
         padding-right: 4.25rem !important;
@@ -85,13 +85,13 @@
         padding-top: 10rem !important;
         .division{
             .division-big {
-                width: 33.33333% !important;
+                width: 100% !important;
                 .big-img {
                     height:30vh !important;
                 }
             }
             .division-small {
-                width: 33.33333% !important;
+                width: 100% !important;
                 .small-img {
                     height:30vh !important;
                 }
@@ -106,7 +106,7 @@
         .about-image {
             .sub-paragraph {
                 display: block !important;
-                width: 50%;
+                width: 100%;
                 div {
                     width: 100%;
                     p {
@@ -189,9 +189,18 @@
         margin-left: 50% !important;
     }
 
+    .home-workshop .workshop-wrap{
+        flex-direction: column;
+        .w-content{
+            width:100% !important;
+        }
+        .w-gallery{
+            width:100% !important;
+        }
+    }
     //journal
     .journal{padding:11rem 0 !important;}
-    .journal .journal-wrap{
+    .journal-wrap{
         flex-direction: column;
         article{border-left:none !important;}
         .journal-big{
@@ -390,7 +399,7 @@
         width: 50% !important;
     }
 
-    .openmenu:checked + .burger + .menuwrap .menuinner{
+    .menuwrap .menuinner{
         padding-top: 9rem !important;
         padding-left: 1.25rem !important;
         padding-bottom: 1.25rem !important;
@@ -443,6 +452,13 @@
     }
 
     .new-arrival .character{display:none;}
+    // .gallery-wrap{
+    //     .gallery-item{
+    //         figure{
+    //             height:350px;
+    //         }
+    //     }
+    // }
 
     .gallery-intro-header {
         .home-header {
@@ -801,6 +817,16 @@
     .shop-gallery .gallery-intro-header .shop-count-link{
         width:33.3333% !important;
     }
+
+    .gallery-wrap{
+        .gallery-item{
+            figure{
+                height:350px;
+            }
+        }
+    }
+
+
 
     // journal
     .journal .journal-wrap .journal-big{
