@@ -138,6 +138,10 @@ main {
   margin: 0 auto;
 }
 
+main > article {
+  position: relative;
+}
+
 .maincover {
   background: #eee;
   position: fixed;

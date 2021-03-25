@@ -21,4 +21,15 @@ window.addEventListener('DOMContentLoaded', function() {
        }
    }
 
+<<<<<<< Updated upstream
+=======
+   //circle event
+    var circle = document.querySelector('.circle-pattern');
+
+    window.addEventListener('scroll',function(){
+        circle.style.transform = 'translateY('+ this.scrollY + 'px)';
+    })
+    
+
+>>>>>>> Stashed changes
 });

@@ -4,6 +4,10 @@
 /* 0~480 */
 @media (max-width: 480px) {
     //common
+    .circle-pattern{
+        left: calc(1.875rem + 20% - 1.125rem);
+        width: calc(60% - 1.5rem);
+    }
     .head {
         align-items: center;
     }
@@ -40,11 +44,8 @@
         margin-top: -0.065em !important;
         margin-bottom: 0.065em !important;
     }
-    .circle-pattern{
-        width:calc(66.6666666667% - 0.8333333333rem);
-        left:calc(0.625rem + 16.6666666667% - 0.2083333333rem) !important;
-        transform:translateX(0) !important;
-    }
+    
+    
 
     //main-index
     .home-intro{
@@ -417,9 +418,8 @@
     }
 
     .circle-pattern{
-        width:calc(66.6666666667% - 0.8333333333rem);
-        left:calc(0.625rem + 16.6666666667% - 0.2083333333rem) !important;
-        transform:translateX(0) !important;
+        width: calc(50% - 1.375rem);
+        left: calc(1.375rem + 25% - 0.6875rem);
     }
 
     //main-index
@@ -769,7 +769,10 @@
     .head {
         align-items: center;
     }
-    .circle-pattern{width: calc(50% - 1.375rem);}
+    .circle-pattern{
+        width: calc(50% - 1.375rem);
+        left: calc(1.375rem + 25% - 0.6875rem);
+    }
 
     //main-index
     .home-about {
