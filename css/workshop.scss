@@ -19,19 +19,6 @@
     color:#313942;
 }
 
-.head{
-    &::before{opacity:1 !important;
-    }
-    .logo{
-        .logo_dark{opacity:1 !important;}
-        .logo_light{opacity:0 !important;} 
-    }
-}
-
-.burger{
-    span{background-color:black !important;}
-}
-
 
 .booking-btn{
     padding:1.25rem 0;

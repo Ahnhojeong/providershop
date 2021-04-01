@@ -582,6 +582,30 @@ header {
   background-color: black;
 }
 
+.head.change::before {
+  opacity: 1;
+}
+
+.head.change .logo a .logo_dark {
+  opacity: 1;
+}
+
+.head.change .logo a .logo_light {
+  opacity: 0;
+}
+
+.head.change .burger .burger-top {
+  background-color: black;
+}
+
+.head.change .burger .burger-bottom {
+  background-color: black;
+}
+
+.head.change .burger.active span {
+  background-color: white;
+}
+
 /* ----------  header menu trigger ---------- */
 .openmenu {
   float: right;
@@ -625,34 +649,6 @@ header {
 
 .burger.active .burger-bottom {
   bottom: 0.6875rem;
-}
-
-header.change .head::before {
-  opacity: 1 !important;
-}
-
-header.change .logo_dark {
-  opacity: 1 !important;
-}
-
-header.change .logo_light {
-  opacity: 0 !important;
-}
-
-header.change .burger-top {
-  background-color: black;
-}
-
-header.change .burger-bottom {
-  background-color: black;
-}
-
-header.change .openmenu:checked + .burger > .burger-top {
-  background-color: white !important;
-}
-
-header.change .openmenu:checked + .burger > .burger-bottom {
-  background-color: white !important;
 }
 
 /* -------------------- footer -------------------- */

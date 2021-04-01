@@ -1,21 +1,5 @@
 @import url("common.css");
 @import url("responsive.css");
-.head::before {
-  opacity: 1 !important;
-}
-
-.head .logo .logo_dark {
-  opacity: 1 !important;
-}
-
-.head .logo .logo_light {
-  opacity: 0 !important;
-}
-
-.burger span {
-  background-color: black !important;
-}
-
 .booking-btn {
   padding: 1.25rem 0;
 }

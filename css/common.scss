@@ -365,6 +365,21 @@ header{
         .burger-bottom{background-color:black;}
     } 
 }
+.head.change{
+    &::before{opacity:1;}
+    .logo a{
+        .logo_dark{opacity:1;}
+        .logo_light{opacity:0;}
+    }
+    .burger{
+        .burger-top{background-color:black;}
+        .burger-bottom{background-color:black;}
+        &.active span{
+            background-color:white;
+        }
+    } 
+}
+
 
 /* ----------  header menu trigger ---------- */
 
@@ -392,17 +407,7 @@ header{
     &.active .burger-bottom{bottom:0.6875rem;}
 }
 
-// header event
 
-header.change{
-    .head::before{opacity:1 !important;}
-    .logo_dark{opacity:1 !important;}
-    .logo_light{opacity:0 !important;}
-    .burger-top{background-color: black;}
-    .burger-bottom{background-color: black;}
-    .openmenu:checked + .burger > .burger-top{background-color: white !important;}
-    .openmenu:checked + .burger > .burger-bottom{background-color: white !important;}
-}
 
 
 /* -------------------- footer -------------------- */
