@@ -1,0 +1,230 @@
+@import url("common.css");
+@import url("responsive.css");
+.head::before {
+  opacity: 1 !important;
+}
+
+.head .logo .logo_dark {
+  opacity: 1 !important;
+}
+
+.head .logo .logo_light {
+  opacity: 0 !important;
+}
+
+.head .head_order .head_order_txt {
+  color: #313942 !important;
+}
+
+.head .head_order .head_order_con {
+  border: 1px solid #313942 !important;
+}
+
+.head .head_order .head_order_con .head_order_num {
+  color: #313942 !important;
+}
+
+.about-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 17rem 0;
+  -webkit-transform: translate3d(0, 2%, 0);
+          transform: translate3d(0, 2%, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: loading 1s 1s forwards;
+          animation: loading 1s 1s forwards;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.workshops {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.workshops::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.workshops .workshop-header {
+  width: 50%;
+  float: right;
+  padding-bottom: 4.5rem;
+}
+
+.workshops .workshop-header h2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshops .workshop-content figure {
+  margin-left: auto;
+  width: 50%;
+  padding-bottom: 5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshops .workshop-content figure img {
+  width: 100%;
+}
+
+.about-history {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 4.5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.about-history article {
+  width: 50%;
+  margin-left: auto;
+}
+
+.about-history article p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 5rem;
+}
+
+.about-gallery {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.about-gallery figure {
+  width: 35%;
+  padding: 0 0.625rem;
+}
+
+.about-gallery figure img {
+  width: 100%;
+}
+
+.about-us {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.about-us .about-info {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 0.625rem;
+  padding-right: 5rem;
+}
+
+.about-us .about-info h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.about-us .about-info .about-info-list {
+  padding-bottom: 3.5rem;
+}
+
+.about-us .about-info .about-info-list h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #313942;
+  padding-bottom: 0.5rem;
+}
+
+.about-us .about-info .about-info-list p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.about-title-img {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.about-title-img figure {
+  width: 100%;
+}
+
+.about-title-img figure img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.shop-loca {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.shop-loca div {
+  width: 50%;
+  margin-left: auto;
+  padding-left: 0.625rem;
+  padding-right: 5rem;
+  padding-bottom: 4.5rem;
+}
+
+.shop-loca div h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.shop-loca div h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #313942;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.shop-loca div p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=about.css.map */

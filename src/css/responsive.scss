@@ -1,0 +1,898 @@
+//scss
+@charset "uft-8";
+
+/* 0~480 */
+@media (max-width: 480px) {
+    //common
+    .circle-pattern{
+        left: calc(1.875rem + 20% - 1.125rem);
+        width: calc(60% - 1.5rem);
+    }
+    .head {
+        align-items: center;
+    }
+    .head .head_order{
+        align-items: center;
+    }
+    .footer-wrap .foot-container {
+        flex-direction: column !important;
+        .foot_01 {
+            width: 100% !important;
+            padding-right: 0;
+            padding-bottom: 1.75rem;
+        }
+        .foot-two {
+            width: 100% !important;
+        }
+    }
+    .footer-wrap .creatpage .web-made p:nth-of-type(1) {
+        width: 50% !important;
+    }
+    .footer-wrap .creatpage .web-made p:nth-of-type(2) {
+        width: 50% !important;
+    }
+    .menuwrap .menuinner{
+        padding-top: 9rem !important;
+        padding-left: 1.25rem !important;
+        padding-right: 4.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+    .head .menuwrap .menuinner .menu ul li{
+        padding-top: 1.25rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .head .menuwrap .menuinner .menu ul li a, .head .menuwrap .menuinner .menu ul li span{
+        font-size: 2.25rem !important;
+        line-height: 2.25rem !important;
+        margin-top: -0.065em !important;
+        margin-bottom: 0.065em !important;
+    }
+    
+    
+
+    //main-index
+    .home-intro{
+        .home-intro-wrap{padding-bottom:1.75rem !important;}
+        .home-intro-ceramic{width: 95% !important;
+            //border-top: 0.0625rem solid rgba(255, 255, 255, 0.15);
+            &::before{
+                content:'';
+                display:block;
+                width:100%;
+                height:0.0625rem;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+            .arrow-wrap{margin-top:1.25rem !important;
+                p{vertical-align: middle;}
+                .reverse{vertical-align: middle;}
+            }
+        }
+        .home-intro-shop{
+            width:95% !important; bottom:15% !important;
+            h2{
+                font-size:2.25rem !important;
+                line-height: 2.25rem !important;
+                margin-bottom:0.065em !important;
+                max-width:40em;
+            }
+        }
+
+    }
+    .new-arrival .character{display:none;}
+    .gallery-intro-header .home-header {width:100% !important;}
+    .shop-gallery{padding-top:10rem !important;}
+    .shop-gallery .gallery-intro-header .shop-count-link {
+        width: 100% !important;
+    }
+
+    .index-journal .divisionwrap {
+        padding-top: 10rem !important;
+        .division{
+            .division-big {
+                width: 100% !important;
+                .big-img {
+                    height:30vh !important;
+                }
+            }
+            .division-small {
+                width: 100% !important;
+                .small-img {
+                    height:30vh !important;
+                }
+            }
+        }
+    }
+    .home-about {
+        padding-top: 10rem !important;
+        .sushi-img {
+            display: none;
+        }
+        .about-image {
+            .sub-paragraph {
+                display: block !important;
+                width: 100%;
+                div {
+                    width: 100%;
+                    p {
+                        line-height: 1.25rem;
+                        font-size: 0.75rem;
+                        padding-bottom: 0.13em;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 500;
+                        max-width: 40em;
+                        color: #566962 !important;
+                    }
+                }
+            }
+        }
+    }
+    .paragraph-wrap {
+        flex-direction: column;
+        .about-paragraph {
+            width: 100% !important;
+            div {
+                p {
+                    font-size: 1.625rem !important;
+                    line-height: 2rem !important;
+                }
+            }
+        }
+        .sub-paragraph {
+            display: none;
+        }
+    }
+    
+    .home-favorite .favorite-wrap{
+        padding-top:10rem !important;
+        padding-bottom:8.75rem !important;
+    }
+    .home-favorite .favorite-wrap {
+        padding-top: 10rem !important;
+        .division{
+            .division-big {
+                width: 33.33333% !important;
+                .big-img {
+                    height:30vh !important;
+                }
+            }
+            .division-small {
+                width: 33.33333% !important;
+                .small-img {
+                    height:30vh !important;
+                }
+            }
+        }
+    }
+    .home-favorite .ramen{
+        width:35% !important;
+    }
+
+    .home-feature {
+        display: block !important;
+        .tumi {
+            width:100% !important; height:100% !important;
+            position: relative !important;
+            display: block !important;
+            overflow: hidden !important;
+            a{
+                padding-top: 66% !important;
+                overflow: hidden;
+                margin-bottom:1.5rem !important;
+            }
+        }
+        .tumi-drawing {
+            display: none !important;
+        }
+        .feature-sum {
+            width: 100% !important;
+        }
+    }
+
+    .sushi figure{
+        width: 50% !important;
+        margin-left: 50% !important;
+    }
+
+    .home-workshop .workshop-wrap{
+        flex-direction: column;
+        .w-content{
+            width:100% !important;
+        }
+        .w-gallery{
+            width:100% !important;
+        }
+    }
+    //journal
+    .journal{padding:11rem 0 !important;}
+    .journal-wrap{
+        flex-direction: column;
+        article{border-left:none !important;}
+        .journal-big{
+            width:100% !important;
+            a .journal-img{
+                height:60vh !important;
+            }
+        }
+        .map{display:none;}
+        .journal-small{
+            width:100% !important;
+            a .journal-img{
+                height:60vh !important;
+            }
+        }
+    }
+
+    // work-shop
+    .workshops {
+        .workshop-header {
+            float: left !important;
+            padding-bottom: 2.5rem !important;
+        }
+        .workshop-content {
+            flex-direction: column;
+            figure {
+                width: 100% !important;
+                order: 1;
+                padding-bottom: 3rem !important;
+            }
+        }
+    }
+    .workshop-info {
+        width: 100%;
+        order: 2;
+    }
+    .workshop-candle article {
+        width: 100% !important;
+    }
+    .candle-title-img figure {
+        width: 100% !important;
+    }
+    .candle-gallery {
+        flex-direction: column;
+        padding-bottom: 0 !important;
+        figure {
+            width: 100% !important;
+            padding-bottom: 3rem !important;
+        }
+    }
+    .workshop-booking .booking-layout {
+        float: left !important;
+    }
+
+    //about
+    .about-wrap {
+        padding: 11rem 0 !important;
+    }
+    .about-history {
+        padding-bottom: 2.5rem !important;
+        article {
+            width: 100% !important;
+            p {
+                padding-right: 0 !important;
+            }
+        }
+    }
+
+    .about-gallery {
+        flex-direction: column;
+        padding-bottom: 0 !important;
+        figure {
+            width: 100% !important;
+            padding-bottom: 3rem !important;
+        }
+    }
+    .about-us .about-info {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+    .shop-loca div {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    //trip_japan
+    .blog-intro-container .intro-info {
+        flex-direction: column !important;
+        .info-left {
+            width: 100% !important;
+            order: 2;
+        }
+        .info-right {
+            width: 100% !important;
+            order: 1 !important;
+            padding-bottom: 2.5rem !important;
+        }
+    }
+    .blog-intro-remark div {
+        margin: 0 auto !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .blog-intro-remark div p {
+        width: 100% !important;
+    }
+    .blog-content-two {
+        padding-bottom: 0 !important;
+        .content-two-wrap {
+            flex-direction: column;
+            padding-bottom: 0 !important;
+            div {
+                width: 100% !important;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .blog-intro {
+        padding-bottom: 2.5rem !important;
+        article {
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+    }
+    .mobile {
+        padding-top: 3rem !important;
+    }
+    .blog-content-one {
+        padding-bottom: 0 !important;
+        .content-one-wrap {
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+    }
+    .content-info {
+        padding-bottom: 2.5rem !important;
+    }
+    .blog-reading-wrap {
+        margin-top: 5.75rem !important;
+        article {
+            border-left: none !important;
+        }
+    }
+    .blog-reading-wrap .journal-big {
+        width: 33.3333% !important;
+        a .journal-img {
+            height: 30vh !important;
+        }
+    }
+    .blog-reading-wrap .journal-small {
+        width: 33.3333% !important;
+        a .journal-img {
+            height: 30vh !important;
+        }
+    }
+    .city-guide{padding-top:11rem !important;}
+    .city-guide .intro-info {
+        flex-direction: column !important;
+        .info-left {
+            width: 100% !important;
+            order: 2 !important;
+            padding-top: 0 !important;
+        }
+        .info-right {
+            width: 100% !important;
+            order: 1;
+            padding-bottom: 3rem !important;
+            article {
+                padding-bottom: 2.5rem !important;
+            }
+        }
+    }
+
+    //detail
+    .detail .detail_sum{
+        width: calc(83.3333333333% - 1.0416666667rem) !important;
+        left: .625rem !important;
+    }
+    //shop
+    .shopAll .shopAll_container .shopAll_items{
+        flex-wrap: wrap !important;
+    }
+    .shopAll .shopAll_container .shopAll_items .items{
+        width:50% !important;
+    }
+    .shop_keyword_wrap .shop_keyworkds ul{
+        flex-wrap: wrap !important;
+    }
+}
+
+/* 480~768 */
+@media (min-width: 480px) and (max-width: 768px) {
+    //common
+    .head {
+        align-items: center;
+    }
+    .head .head_order{
+        align-items: center;
+    }
+    .footer-wrap .foot-container {
+        flex-direction: column !important;
+        .foot_01 {
+            width: 100% !important;
+            padding-right: 0;
+            padding-bottom: 1.75rem;
+        }
+        .foot-two {
+            width: 100% !important;
+        }
+    }
+    .footer-wrap .creatpage .web-made p:nth-of-type(1) {
+        width: 50% !important;
+    }
+    .footer-wrap .creatpage .web-made p:nth-of-type(2) {
+        width: 50% !important;
+    }
+
+    .menuwrap .menuinner{
+        padding-top: 9rem !important;
+        padding-left: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+        padding-right: 4.25rem !important;
+    }
+    .head .menuwrap .menuinner .menu ul li{
+        padding-top: 1.25rem !important;
+        padding-bottom: 1rem !important;
+    }
+    .head .menuwrap .menuinner .menu ul li a, .head .menuwrap .menuinner .menu ul li span{
+        font-size: 2.25rem !important;
+        line-height: 2.25rem !important;
+        margin-top: -0.065em !important;
+        margin-bottom: 0.065em !important;
+    }
+
+    .circle-pattern{
+        width: calc(50% - 1.375rem);
+        left: calc(1.375rem + 25% - 0.6875rem);
+    }
+
+    //main-index
+    .home-intro{
+        .home-intro-wrap{padding-bottom:1.75rem !important;}
+        .home-intro-ceramic{width: 95% !important;
+            //border-top: 0.0625rem solid rgba(255, 255, 255, 0.15);
+            &::before{
+                content:'';
+                display:block;
+                width:100%;
+                height:0.0625rem;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+            .arrow-wrap{margin-top:1.25rem !important;
+                p{vertical-align: middle;}
+                .reverse{vertical-align: middle;}
+            }
+        }
+        .home-intro-shop{
+            width:95% !important; bottom:15% !important;
+            h2{
+                font-size:2.25rem !important;
+                line-height: 2.25rem !important;
+                margin-bottom:0.065em !important;
+                max-width:40em;
+            }
+        }
+
+    }
+
+    .new-arrival .character{display:none;}
+
+
+    .gallery-intro-header {
+        .home-header {
+            width: 100% !important;
+        }
+    }
+    .shop-gallery .gallery-intro-header .shop-count-link {
+        width: 100% !important;
+    }
+    .home-about {
+        padding-top: 10rem !important;
+        .sushi-img {
+            display: none;
+        }
+        .about-image {
+            .sub-paragraph {
+                display: block !important;
+                width: 50%;
+                div {
+                    width: 100%;
+                    p {
+                        line-height: 1.25rem;
+                        font-size: 0.75rem;
+                        padding-bottom: 0.13em;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 500;
+                        max-width: 40em;
+                        color: #566962 !important;
+                    }
+                }
+            }
+        }
+    }
+    .paragraph-wrap {
+        flex-direction: column;
+        .about-paragraph {
+            width: 100% !important;
+            div {
+                p {
+                    font-size: 1.625rem !important;
+                    line-height: 2rem !important;
+                }
+            }
+        }
+        .sub-paragraph {
+            display: none;
+        }
+    }
+
+    .index-journal .divisionwrap {
+        padding-top: 10rem !important;
+        .division{
+            .division-big {
+                width: 33.33333% !important;
+                .big-img {
+                    height:35vh !important;
+                }
+            }
+            .division-small {
+                width: 33.33333% !important;
+                .small-img {
+                    height:35vh !important;
+                }
+            }
+        }
+    }
+
+    .home-feature {
+        display: block !important;
+        .tumi {
+            width:100% !important; height:100% !important;
+            position: relative !important;
+            display: block !important;
+            overflow: hidden !important;
+            a{
+                padding-top: 66% !important;
+                overflow: hidden;
+                margin-bottom:1.5rem !important;
+            }
+        }
+        .tumi-drawing {
+            display: none !important;
+        }
+        .feature-sum {
+            width: 100% !important;
+            border-left:none !important;
+        }
+    }
+
+
+    
+    
+    .journal-wrap .journal-big {
+        width: 50%;
+    }
+    .home-favorite .favorite-wrap {
+        padding-top: 10rem !important;
+        .division{
+            .division-big {
+                width: 33.33333% !important;
+                .big-img {
+                    height:35vh !important;
+                }
+            }
+            .division-small {
+                width: 33.33333% !important;
+                .small-img {
+                    height:35vh !important;
+                }
+            }
+        }
+    }
+
+
+    .home-workshop {
+        .workshop-wrap {
+            flex-direction: column;
+            .w-content {
+                width: 100% !important;
+            }
+        }
+    }
+    .w-gallery {
+        width: 100% !important;
+    }
+    .favorite-wrap .gallery-intro-header .home-header {
+        margin-bottom: 0.095em !important;
+    }
+    .gallery-intro-header .home-header {
+        margin-bottom: -1.5rem !important;
+        width:100% !important;
+    }
+    .instagram .insta-wrap .gallery-intro-header .shop-count-link {
+        width: 100% !important;
+        margin-bottom: -1.5rem !important;
+    }
+    // journal
+    .journal .journal-wrap .journal-big{
+        width:33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+    .journal .journal-wrap .journal-small{
+        width:33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+
+    // work-shop
+    .workshops {
+        .workshop-header {
+            float: left !important;
+            padding-bottom: 2.5rem !important;
+        }
+        .workshop-content {
+            flex-direction: column;
+            figure {
+                width: 100% !important;
+                order: 1;
+                padding-bottom: 3rem !important;
+            }
+        }
+    }
+    .workshop-info {
+        width: 100%;
+        order: 2;
+    }
+    .workshop-candle article {
+        width: 100% !important;
+    }
+    .candle-title-img figure {
+        width: 100% !important;
+    }
+    .candle-gallery {
+        flex-direction: column;
+        padding-bottom: 0 !important;
+        figure {
+            width: 100% !important;
+            padding-bottom: 3rem !important;
+        }
+    }
+    .workshop-booking .booking-layout {
+        float: left !important;
+    }
+
+    //about
+    .about-wrap {
+        padding: 11rem 0 !important;
+    }
+    .about-history {
+        padding-bottom: 2.5rem !important;
+        article {
+            width: 100% !important;
+            p {
+                padding-right: 0 !important;
+            }
+        }
+    }
+
+    .about-gallery {
+        flex-direction: column;
+        padding-bottom: 0 !important;
+        figure {
+            width: 100% !important;
+            padding-bottom: 3rem !important;
+        }
+    }
+    .about-us .about-info {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+    .shop-loca div {
+        width: 100% !important;
+        padding-right: 0 !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    //trip_japan
+    .blog-intro-container .intro-info {
+        flex-direction: column !important;
+        .info-left {
+            width: 100% !important;
+            order: 2;
+        }
+        .info-right {
+            width: 100% !important;
+            order: 1 !important;
+            padding-bottom: 2.5rem !important;
+        }
+    }
+    .blog-intro-remark div {
+        margin: 0 auto !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .blog-intro-remark div p {
+        width: 100% !important;
+    }
+    .blog-content-two {
+        padding-bottom: 0 !important;
+        .content-two-wrap {
+            flex-direction: column;
+            padding-bottom: 0 !important;
+            div {
+                width: 100% !important;
+                padding-bottom: 0;
+            }
+        }
+    }
+    .blog-intro {
+        padding-bottom: 2.5rem !important;
+        article {
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+    }
+    .mobile {
+        padding-top: 3rem !important;
+    }
+    .blog-content-one {
+        padding-bottom: 0 !important;
+        .content-one-wrap {
+            width: 100% !important;
+            margin: 0 auto !important;
+        }
+    }
+    .content-info {
+        padding-bottom: 2.5rem !important;
+    }
+    .blog-reading-wrap {
+        margin-top: 5.75rem !important;
+        article {
+            border-left: none !important;
+        }
+    }
+    .blog-reading-wrap .journal-big {
+        width: 33.3333% !important;
+        a .journal-img {
+            height: 30vh !important;
+            padding-top: 150% !important;
+        }
+    }
+    .blog-reading-wrap .journal-small {
+        width: 33.3333% !important;
+        a .journal-img {
+            height: 30vh !important;
+            padding-top: 0%;  
+        }
+    }
+    .city-guide .intro-info {
+        flex-direction: column !important;
+        .info-left {
+            width: 100% !important;
+            order: 2 !important;
+            padding-top: 0 !important;
+        }
+        .info-right {
+            width: 100% !important;
+            order: 1;
+            padding-bottom: 3rem !important;
+            article {
+                padding-bottom: 2.5rem !important;
+            }
+        }
+    }
+    //detail
+    .detail .detail_sum{
+        width: calc(83.3333333333% - 1.0416666667rem) !important;
+        left: .625rem !important;
+    }
+
+    //shop
+    .shopAll .shopAll_container .shopAll_items{
+        flex-wrap: wrap !important;
+    }
+    .shopAll .shopAll_container .shopAll_items .items{
+        width:50% !important;
+    }
+    .shop_keyword_wrap .shop_keyworkds ul{
+        flex-wrap: wrap !important;
+    }
+}
+/* 768~1024 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    //common
+    .head {
+        align-items: center;
+    }
+    .head .head_order{
+        align-items: center;
+    }
+    .circle-pattern{
+        width: calc(50% - 1.375rem);
+        left: calc(1.375rem + 25% - 0.6875rem);
+    }
+
+    //main-index
+    .home-about {
+        .sushi-img {
+            figure {
+                left: 5% !important;
+                top: 15% !important;
+                img {
+                    width: 60% !important;
+                }
+            }
+        }
+    }
+    .paragraph-wrap {
+        .about-paragraph {
+            width: 66.6666% !important;
+        }
+        .sub-paragraph {
+            width: 33.3333% !important;
+        }
+    }
+    .division {
+        .division-big {
+            width: 33.33333% !important;
+            .big-img {
+                height:45vh !important;
+            }
+        }
+        .division-small {
+            width: 33.33333% !important;
+            .small-img {
+                height:45vh !important;
+            }
+        }
+    }
+    .home-feature {
+        .tumi-drawing {
+            width: 16.66666% !important;
+        }
+        .feature-sum {
+            width: 33.33333% !important;
+        }
+    }
+    .gallery-intro-header .home-header{width:66.6666% !important;}
+    .shop-gallery .gallery-intro-header .shop-count-link{
+        width:33.3333% !important;
+    }
+
+    .gallery-wrap{
+        .gallery-item{
+            figure{
+                height:350px;
+            }
+        }
+    }
+
+
+
+    // journal
+    .journal .journal-wrap .journal-big{
+        width:33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+    .journal .journal-wrap .journal-small{
+        width:33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+
+    //trip_japan
+    .blog-reading-wrap .journal-big {
+        width: 33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+    .blog-reading-wrap .journal-small {
+        width: 33.3333% !important;
+        a .journal-img{padding-top:130% !important;}
+    }
+
+    //detail
+    .detail .detail_sum{
+        width:25%;
+    }
+}
+
+/* 1025~1599 */
+
+@media (min-width: 1025px) and (max-width: 1599px) {
+}

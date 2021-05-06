@@ -1,0 +1,248 @@
+@import url("common.css");
+@import url("responsive.css");
+.head .head_order .head_order_txt {
+  color: #313942 !important;
+}
+
+.head .head_order .head_order_con {
+  border: 1px solid #313942 !important;
+}
+
+.head .head_order .head_order_con .head_order_num {
+  color: #313942 !important;
+}
+
+.booking-btn {
+  padding: 1.25rem 0;
+}
+
+.booking-btn a {
+  display: inline-block;
+  padding: 0 1.25rem;
+  border: 1px solid #313942;
+  height: 3.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 3.5rem;
+}
+
+.workshop-info {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshop-info h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #313942;
+  padding-top: 1.5rem;
+}
+
+.workshop-info p {
+  padding-bottom: 0.5rem;
+}
+
+.workshops-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 17rem 0;
+  -webkit-transform: translate3d(0, 2%, 0);
+          transform: translate3d(0, 2%, 0);
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: loading 1s 1s forwards;
+          animation: loading 1s 1s forwards;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.workshops {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.workshops::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.workshops .workshop-header {
+  width: 50%;
+  float: right;
+  padding-bottom: 4.5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshops .workshop-header h2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+.workshops .workshop-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.workshops .workshop-content figure {
+  width: 50%;
+  padding-bottom: 5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshops .workshop-content figure img {
+  width: 100%;
+}
+
+.workshop-candle {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+.workshop-candle::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.workshop-candle article {
+  width: 50%;
+  float: right;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.workshop-candle article .candle-head {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.workshop-candle article .candle-info h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #313942;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.workshop-candle article .candle-info p {
+  font-weight: 300;
+}
+
+.candle-title-img {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.candle-title-img::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.candle-title-img figure {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  width: 50%;
+  float: right;
+}
+
+.candle-title-img figure img {
+  width: 100%;
+}
+
+.saying {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 4.5rem;
+}
+
+.saying p {
+  height: 100%;
+  max-width: 20.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.saying span {
+  display: block;
+  max-width: 40em;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.candle-gallery {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.candle-gallery figure {
+  width: 35%;
+  padding: 0 0.625rem;
+}
+
+.candle-gallery figure img {
+  width: 100%;
+}
+
+.workshop-booking {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 6.5rem;
+}
+
+.workshop-booking::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.workshop-booking .booking-layout {
+  width: 50%;
+  float: right;
+  padding-left: 0.625rem;
+}
+/*# sourceMappingURL=workshop.css.map */

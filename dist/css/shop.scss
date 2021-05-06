@@ -1,0 +1,196 @@
+//scss
+
+@charset "uft-8";
+@import url('common.css');
+@import url('responsive.css');
+
+@mixin font01{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size:0.875rem;
+    line-height: 1.5rem;
+}
+@mixin conSize{
+    width:95%; margin:0 auto;
+    padding-left:0.625rem; padding-right:0.625rem;
+}
+@mixin padding{
+    padding-left:0.625rem; padding-right:0.625rem;
+}
+
+.head{
+    .head_order{
+        .head_order_txt{
+            color:#313942 !important;
+        }
+        .head_order_con{
+            border: 1px solid #313942 !important;
+            .head_order_num{
+                color:#313942 !important;
+            }
+        }
+    }
+}
+
+.shopAll_Wrap{
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+    transform: translate3d(0,2%,0);
+    opacity:0;
+    transition:all 1s;
+    animation: loading 1s 1s forwards;
+}
+@keyframes loading{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-intro-header{
+    @include conSize;
+    .home-header{
+        width:100%;
+        padding-bottom:3rem;
+        font-size:2.5rem;
+        line-height:3rem;
+        .shop-count-count{
+            font-size:1rem;
+            display: inline-block;
+            position: absolute;
+            font-family: 'Inter', sans-serif; 
+        }
+    }
+}
+
+.shopTitle_sum{
+    @include conSize;
+    div{
+        max-width: 28.75rem;
+        p{
+            color: #8d9092;
+            font-weight: 400;
+            font-size:0.875rem;
+            line-height: 1.5rem;
+            @include font01;
+        }
+    }
+}
+
+.shop_keyword_wrap{
+    @include conSize;
+    .shop_keyworkds{
+        ul{
+            display: flex;
+            padding-top: 2.75rem;
+            .S_keyword{
+                display: inline-block;
+                height: 2.5rem;
+                margin-right:0.5rem;
+                margin-bottom: 1rem;
+
+                a{
+                    display: inline-block;
+                    line-height: 2.5rem;
+                    border: .0625rem solid #e1dfdb;
+                    border-radius: 1.25rem;
+                    height: 2.5rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    color: #566962;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size:0.875rem;
+                    &.nowtab{
+                        color: #fff;
+                        border-color: #566962;
+                        background-color: #566962;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shopAll{
+    .shopAll_container{
+        width:95%; margin:0 auto;
+        .line{
+            @include padding;
+            span{
+                width: 100%;
+                height: .0625rem;
+                background-color: #e1dfdb;
+                display: block;
+                margin-bottom: calc(2rem - .0625rem);
+                margin-top: 2.5rem;
+                text-indent: -9999px;
+            }
+        }
+        .shopAll_items{
+            display: flex;
+            .items{
+                width:25%;
+                @include padding;
+                .item{
+                    width:100%;
+                    display: inline-block;
+                    .itemThumb{
+                        width:100%;
+                        
+                        div{
+                            padding-top: 130%;
+                            position: relative;
+                            figure{
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                background-color: rgba(0,0,0,.1);
+                                box-sizing: border-box;
+                                &:nth-of-type(2){
+                                    opacity: 0;
+                                }
+                                img{
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    object-fit: cover;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                    .itemInfo{
+                        div{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                            padding-top: .75rem;
+                            .itemName{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 500;
+                                font-size: .875rem;
+                                color: #313942;
+                                max-width: 40em;
+                                margin-top: -.03em;
+                                margin-bottom: .03em;
+                            }
+                            .itemPrice{
+                                font-family: 'Inter', sans-serif;
+                                margin-top: -.03em;
+                                margin-bottom: .03em;
+                                font-size: .875rem;
+                                line-height: 1.5rem;
+                                color: #313942;
+                                max-width: 40em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
